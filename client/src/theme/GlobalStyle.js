@@ -47,6 +47,10 @@ const GlobalStyle = createGlobalStyle`
     font-family:inherit;
   }
 
+  input[type="date"]{
+    color:white;
+  }
+
   select{
     outline:none;
     border:none;
