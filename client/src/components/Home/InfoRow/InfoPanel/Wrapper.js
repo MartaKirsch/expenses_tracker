@@ -30,6 +30,20 @@ const Wrapper = styled.div`
     opacity:1;
   }
 
+  @media(min-width: 200px)
+  {
+    width:80%;
+    padding:4vw;
+    margin: 0 0 10vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:80%;
+    padding:4vw;
+    margin: 0 0 10vw;
+  }
+
   @media(min-width: 768px)
   {
     width:60%;

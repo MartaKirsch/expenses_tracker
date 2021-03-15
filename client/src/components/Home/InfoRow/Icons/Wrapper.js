@@ -8,6 +8,24 @@ const Wrapper = styled.div`
   display:flex;
   justify-content:space-around;
 
+  @media(min-width: 200px)
+  {
+    img{
+      width:9vw;
+      height:auto;
+    }
+    padding:3vw 0;
+  }
+
+  @media(min-width: 576px)
+  {
+    img{
+      width:9vw;
+      height:auto;
+    }
+    padding:3vw 0;
+  }
+
 
   @media(min-width: 768px)
   {

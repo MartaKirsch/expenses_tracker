@@ -13,6 +13,16 @@ const Img = styled.img.attrs({
     transform:scale(1.2);
   }
 
+  @media(min-width: 200px)
+  {
+    width:75%;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:75%;
+  }
+
   @media(min-width: 768px)
   {
     width:69%;

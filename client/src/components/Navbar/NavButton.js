@@ -29,6 +29,18 @@ const NavButton = styled.div`
     transform:scaleX(1);
   }
 
+  @media(min-width: 200px)
+  {
+    padding:0 4vw;
+    font-size:4vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    padding:0 4vw;
+    font-size:4vw;
+  }
+
 
   @media(min-width: 768px)
   {

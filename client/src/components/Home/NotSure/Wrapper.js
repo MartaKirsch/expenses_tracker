@@ -20,6 +20,34 @@ const Wrapper = styled.div`
     overflow:visible;
   }
 
+  @media(min-width: 200px)
+  {
+    width:90%;
+
+    &::before
+    {
+      width:100%;
+    }
+
+    svg{
+      width:30%;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    width:90%;
+
+    &::before
+    {
+      width:100%;
+    }
+
+    svg{
+      width:30%;
+    }
+  }
+
 
   @media(min-width: 768px)
   {

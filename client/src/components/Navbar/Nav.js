@@ -10,6 +10,18 @@ const Nav = styled.nav`
   z-index: 1000;
   background-color: #2D3142;
 
+  @media(min-width: 200px)
+  {
+    height:15vw;
+    margin:0 0 8vw 0;
+  }
+
+
+  @media(min-width: 576px)
+  {
+    height:15vw;
+    margin:0 0 8vw 0;
+  }
 
   @media(min-width: 768px)
   {

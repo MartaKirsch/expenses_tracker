@@ -4,6 +4,16 @@ const Wrapper = styled.div`
   display:flex;
   flex-direction:column;
 
+  @media(min-width: 200px)
+  {
+    width:55%;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:55%;
+  }
+
   @media(min-width: 768px)
   {
     width:50%;

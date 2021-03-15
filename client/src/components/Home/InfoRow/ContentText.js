@@ -3,6 +3,18 @@ import styled from 'styled-components';
 const ContentText = styled.div`
   text-align:justify;
 
+  @media(min-width: 200px)
+  {
+    font-size:3.5vw;
+    ${props=>props.last ? ('padding:3vw 0 0;') : ('')}
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:3.5vw;
+    ${props=>props.last ? ('padding:3vw 0 0;') : ('')}
+  }
+
   @media(min-width: 768px)
   {
     font-size:2.3vw;

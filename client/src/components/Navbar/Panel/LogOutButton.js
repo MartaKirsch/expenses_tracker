@@ -12,6 +12,15 @@ const LogOutButton = styled.button`
     text-decoration:underline;
   }
 
+  @media(min-width: 200px)
+  {
+    font-size:2.5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:2.5vw;
+  }
 
   @media(min-width: 768px)
   {

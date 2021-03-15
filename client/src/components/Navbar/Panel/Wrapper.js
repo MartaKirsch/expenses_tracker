@@ -17,6 +17,21 @@ const Wrapper = styled.div`
     `
   )}
 
+  @media(min-width: 200px)
+  {
+    right:5vw;
+    height:35vw;
+    padding:2vw 0;
+    width:34vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    right:5vw;
+    height:35vw;
+    padding:2vw 0;
+    width:34vw;
+  }
 
   @media(min-width: 768px)
   {

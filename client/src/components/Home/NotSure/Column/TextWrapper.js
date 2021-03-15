@@ -29,6 +29,18 @@ const TextWrapper = styled.div`
     opacity:1;
   }
 
+  @media(min-width: 200px)
+  {
+    padding:3vw;
+    font-size:3vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    padding:3vw;
+    font-size:3vw;
+  }
+
   @media(min-width: 768px)
   {
     padding:2.25vw;

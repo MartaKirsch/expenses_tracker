@@ -7,6 +7,18 @@ const Title = styled.h1`
   padding:0;
   border-bottom: 3px solid #EF8354;
 
+  @media(min-width: 200px)
+  {
+    font-size:4.7vw;
+    padding: 0 0 2vw 0;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:4.7vw;
+    padding: 0 0 2vw 0;
+  }
+
   @media(min-width: 768px)
   {
     font-size:3.7vw;

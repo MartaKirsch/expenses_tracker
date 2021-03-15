@@ -38,6 +38,22 @@ const Wrapper = styled.div`
     transform:translateX(100%);
   }
 
+  @media(min-width: 200px)
+  {
+    margin: 5vw 0 9vw;
+    height:19vw;
+    width:65%;
+    font-size:4.5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    margin: 5vw 0 9vw;
+    height:19vw;
+    width:65%;
+    font-size:4.5vw;
+  }
+
   @media(min-width: 768px)
   {
     margin: 3vw 0 7vw;

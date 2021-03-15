@@ -4,6 +4,22 @@ const Title = styled.h1`
   border-bottom: 3px solid #EF8354;
   font-weight:normal;
 
+  @media(min-width: 200px)
+  {
+    width:75%;
+    margin:9vw 0 4vw;
+    padding: 0 0 .5vw;
+    font-size: 4.5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:75%;
+    margin:9vw 0 4vw;
+    padding: 0 0 .5vw;
+    font-size: 4.5vw;
+  }
+
   @media(min-width: 768px)
   {
     width:75%;

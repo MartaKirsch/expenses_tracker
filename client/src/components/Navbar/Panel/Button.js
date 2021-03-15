@@ -39,6 +39,20 @@ const Button = styled.div`
   }
 
 
+  @media(min-width: 200px)
+  {
+    height:7vw;
+    width:80%;
+    font-size:3.2vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    height:7vw;
+    width:80%;
+    font-size:3.2vw;
+  }
+
   @media(min-width: 768px)
   {
     height:6vw;
