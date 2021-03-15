@@ -11,6 +11,20 @@ const Icon = styled.div`
     height:auto;
   }
 
+  @media(min-width: 200px)
+  {
+    border-radius: 10px;
+    width:23vw;
+    height:23vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    border-radius: 10px;
+    width:20vw;
+    height:20vw;
+  }
+
   @media(min-width: 768px)
   {
     border-radius: 10px;

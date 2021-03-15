@@ -13,6 +13,22 @@ const Submit = styled.input.attrs({
   }
 
 
+  @media(min-width: 200px)
+  {
+    font-size:3.8vw;
+    height:8vw;
+    width:40%;
+    margin: 1vw 0 0 0;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:3.5vw;
+    height:7.5vw;
+    width:40%;
+    margin: 1vw 0 0 0;
+  }
+
   @media(min-width: 768px)
   {
     font-size:2.7vw;

@@ -31,8 +31,8 @@ const TextWrapper = styled.div`
 
   @media(min-width: 200px)
   {
-    padding:3vw;
-    font-size:3vw;
+    padding:3.5vw;
+    font-size:3.3vw;
   }
 
   @media(min-width: 576px)

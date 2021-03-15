@@ -46,6 +46,56 @@ const Options = styled.div`
     align-items:center;
   }
 
+  @media(min-width: 200px)
+  {
+    width:150% !important;
+    top:11vw;
+    border-radius:20px;
+
+    label{
+      font-size:3.8vw;
+      padding:3vw 4vw;
+    }
+
+    input{
+      width:6.5vw;
+      height:6.5vw;
+      margin:0;
+    }
+
+    span{
+      width:6.5vw;
+      height:6.5vw;
+      border-radius:10px;
+      right:4vw;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    width:150% !important;
+    top:11vw;
+    border-radius:20px;
+
+    label{
+      font-size:3.5vw;
+      padding:3vw;
+    }
+
+    input{
+      width:5.5vw;
+      height:5.5vw;
+      margin:0;
+    }
+
+    span{
+      width:5.5vw;
+      height:5.5vw;
+      border-radius:10px;
+      right:3vw;
+    }
+  }
+
   @media(min-width: 768px)
   {
     width:150% !important;

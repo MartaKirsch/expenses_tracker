@@ -3,6 +3,18 @@ import styled from 'styled-components';
 const Header = styled.h1`
   border-bottom:2px solid var(--orange);
 
+  @media(min-width: 200px)
+  {
+    font-size:23vw;
+    margin: 0 0 7vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:18vw;
+    margin: 0 0 6vw;
+  }
+
   @media(min-width: 768px)
   {
     font-size:10vw;

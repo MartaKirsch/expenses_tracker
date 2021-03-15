@@ -5,6 +5,11 @@ const Wrapper = styled.div`
   flex-direction:column;
   align-items:center;
 
+  @media(min-width: 200px)
+  {
+    width:50%;
+  }
+
   @media(min-width: 768px)
   {
     width:50%;

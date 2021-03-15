@@ -7,6 +7,18 @@ const Wrapper = styled.form`
   align-items:flex-start;
   border-top: 1px solid var(--blue);
 
+  @media(min-width: 200px)
+  {
+    width:90%;
+    padding: 8vw 0 0;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:85%;
+    padding: 7vw 0 0;
+  }
+
   @media(min-width: 768px)
   {
     width:90%;
@@ -21,7 +33,6 @@ const Wrapper = styled.form`
 
   @media(min-width: 1200px)
   {
-    width:80%;
     padding: 3vw 0 0;
   }
 

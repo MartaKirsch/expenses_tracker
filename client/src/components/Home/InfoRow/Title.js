@@ -9,7 +9,7 @@ const Title = styled.h1`
 
   @media(min-width: 200px)
   {
-    font-size:4.7vw;
+    font-size:5vw;
     padding: 0 0 2vw 0;
   }
 

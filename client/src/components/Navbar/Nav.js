@@ -12,14 +12,14 @@ const Nav = styled.nav`
 
   @media(min-width: 200px)
   {
-    height:15vw;
-    margin:0 0 8vw 0;
+    height:17vw;
+    margin:0 0 9vw 0;
   }
 
 
   @media(min-width: 576px)
   {
-    height:15vw;
+    height:16vw;
     margin:0 0 8vw 0;
   }
 

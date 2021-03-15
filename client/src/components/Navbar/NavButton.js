@@ -32,13 +32,13 @@ const NavButton = styled.div`
   @media(min-width: 200px)
   {
     padding:0 4vw;
-    font-size:4vw;
+    font-size:4.5vw;
   }
 
   @media(min-width: 576px)
   {
     padding:0 4vw;
-    font-size:4vw;
+    font-size:4.25vw;
   }
 
 

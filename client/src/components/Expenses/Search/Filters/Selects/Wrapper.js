@@ -14,6 +14,34 @@ const Wrapper = styled.div`
     border-bottom: 2px solid var(--orange);
   }
 
+  @media(min-width: 200px)
+  {
+    margin: 0 0 6vw;
+    font-size:4.3vw;
+    width:50vw;
+
+    select{
+      width:32vw;
+      font-size:4vw;
+      padding:2vw;
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    margin: 0 0 6vw;
+    font-size:3.3vw;
+    width:42vw;
+
+    select{
+      width:27vw;
+      font-size:3vw;
+      padding:1.5vw;
+      border-radius:20px;
+    }
+  }
+
   @media(min-width: 768px)
   {
     margin: 0 0 5vw;

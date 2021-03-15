@@ -9,8 +9,33 @@ const MainWrapper = styled.div`
     height:auto;
   }
 
+  @media(min-width: 200px)
+  {
+    flex-direction:column;
+    width:90%;
+    margin: 4vw 0 0;
+
+    svg
+    {
+      width:50%;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    flex-direction:column;
+    width:90%;
+    margin: 4vw 0 0;
+
+    svg
+    {
+      width:40%;
+    }
+  }
+
   @media(min-width: 768px)
   {
+    flex-direction:row;
     width:80%;
     margin: 4vw 0 0;
 

@@ -35,12 +35,26 @@ const UserIcon = styled.div`
     height:auto;
   }
 
-
-  @media(min-width: 768px)
+  @media(min-width: 200px)
   {
     width:60%;
     padding:4vw;
 
+    img {
+      width:25vw;
+    }
+  }
+
+
+  @media(min-width: 576px)
+  {
+    img {
+      width:23vw;
+    }
+  }
+
+  @media(min-width: 768px)
+  {
     img {
       width:17vw;
     }
@@ -49,7 +63,6 @@ const UserIcon = styled.div`
   @media(min-width: 992px)
   {
     width:50%;
-    padding:4vw;
 
     img {
       width:14vw;
@@ -58,7 +71,6 @@ const UserIcon = styled.div`
 
   @media(min-width: 1200px)
   {
-    width:50%;
     padding:2vw;
 
     img {

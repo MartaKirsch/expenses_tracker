@@ -5,8 +5,8 @@ const ContentText = styled.div`
 
   @media(min-width: 200px)
   {
-    font-size:3.5vw;
-    ${props=>props.last ? ('padding:3vw 0 0;') : ('')}
+    font-size:3.8vw;
+    ${props=>props.last ? ('padding:3.3vw 0 0;') : ('')}
   }
 
   @media(min-width: 576px)

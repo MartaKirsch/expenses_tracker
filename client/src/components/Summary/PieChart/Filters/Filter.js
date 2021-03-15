@@ -23,6 +23,50 @@ const Filter = styled.div`
     text-transform:uppercase;
   }
 
+  @media(min-width: 200px)
+  {
+    width:80%;
+    margin: 0 0 7vw;
+
+    input, select{
+      padding:2vw;
+      border-radius:20px;
+      font-size:4.3vw;
+      width:65%;
+    }
+
+    label{
+      font-size:4vw;
+      margin:0;
+    }
+
+    div{
+      width:60%;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    width:75%;
+    margin: 0 0 7vw;
+
+    input, select{
+      padding:1.7vw;
+      border-radius:20px;
+      font-size:4vw;
+      width:60%;
+    }
+
+    label{
+      font-size:3.5vw;
+      margin:0;
+    }
+
+    div{
+      width:60%;
+    }
+  }
+
   @media(min-width: 768px)
   {
     width:55%;

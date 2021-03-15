@@ -6,10 +6,20 @@ const Wrapper = styled.div`
   align-items:center;
   justify-content:space-between;
 
+  @media(min-width: 200px)
+  {
+    margin:10vw 0 12vw;
+    flex-wrap:wrap;
+  }
+
+  @media(min-width: 576px)
+  {
+    margin:8vw 0 10vw;
+  }
+
   @media(min-width: 768px)
   {
     margin:6vw 0 8vw;
-    flex-wrap:wrap;
   }
 
   @media(min-width: 992px)

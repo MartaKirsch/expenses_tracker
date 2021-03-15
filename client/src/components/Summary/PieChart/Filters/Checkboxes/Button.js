@@ -7,6 +7,20 @@ const Button = styled.button`
   text-transform:uppercase;
   border-bottom:1px var(--orange) solid;
 
+  @media(min-width: 200px)
+  {
+    border-radius:20px;
+    font-size:4.3vw;
+    padding:2vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    border-radius:20px;
+    font-size:4vw;
+    padding:1.7vw;
+  }
+
   @media(min-width: 768px)
   {
     border-radius:20px;

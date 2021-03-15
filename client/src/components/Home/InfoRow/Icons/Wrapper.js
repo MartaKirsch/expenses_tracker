@@ -11,10 +11,10 @@ const Wrapper = styled.div`
   @media(min-width: 200px)
   {
     img{
-      width:9vw;
+      width:11vw;
       height:auto;
     }
-    padding:3vw 0;
+    padding:3.25vw 0;
   }
 
   @media(min-width: 576px)

@@ -5,6 +5,16 @@ const Form = styled.form`
   flex-direction:column;
   align-items:center;
 
+  @media(min-width: 200px)
+  {
+    width:80%;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:80%;
+  }
+
   @media(min-width: 768px)
   {
     width:70%;

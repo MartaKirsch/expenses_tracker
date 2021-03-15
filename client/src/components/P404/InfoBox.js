@@ -31,8 +31,25 @@ const InfoBox = styled.div`
     opacity:1;
   }
 
+  @media(min-width: 200px)
+  {
+    padding:4.5vw;
+    font-size:4vw;
+    width:100%;
+    margin: 0 0 10vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    padding:4vw;
+    font-size:3.5vw;
+    width:100%;
+    margin: 0 0 6vw;
+  }
+
   @media(min-width: 768px)
   {
+    margin:0;
     padding:2.5vw;
     font-size:2.5vw;
     width:80%;

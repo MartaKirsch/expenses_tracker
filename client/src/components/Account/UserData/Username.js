@@ -3,6 +3,18 @@ import styled from 'styled-components';
 const Username = styled.div`
   text-transform:uppercase;
 
+  @media(min-width: 200px)
+  {
+    font-size:6.5vw;
+    margin: 5vw 0 0;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:5.5vw;
+    margin: 5vw 0 0;
+  }
+
   @media(min-width: 768px)
   {
     font-size:4.25vw;

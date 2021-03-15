@@ -5,17 +5,25 @@ const FormWrapper = styled.form`
   flex-direction:column;
   align-items:center;
 
+  @media(min-width: 200px)
+  {
+    margin:0;
+    width:80%;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:70%;
+  }
 
   @media(min-width: 768px)
   {
-    margin:0;
     width:60%;
   }
 
   @media(min-width: 922px)
   {
     margin: 4vw 0 0 0;
-    width:60%;
   }
 
   @media(min-width: 1200px)

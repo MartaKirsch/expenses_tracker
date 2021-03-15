@@ -22,11 +22,12 @@ const Wrapper = styled.div`
 
   @media(min-width: 200px)
   {
-    width:90%;
+    width:100%;
 
     &::before
     {
-      width:100%;
+      left:10%;
+      width:80%;
     }
 
     svg{

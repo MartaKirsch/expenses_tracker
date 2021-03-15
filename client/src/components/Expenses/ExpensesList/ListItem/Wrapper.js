@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width:100%;
 
   a{
     display:flex;
@@ -32,14 +31,52 @@ const Wrapper = styled.div`
     opacity:1;
   }
 
-
-  @media(min-width: 768px)
+  @media(min-width: 200px)
   {
+    width:100%;
+    margin: 0 0 10vw;
+
+    a{
+      border-radius: 20px;
+      padding: 5vw 3vw;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    width:85%;
     margin: 0 0 7vw;
 
     a{
       border-radius: 20px;
-      padding: 1.75vw
+      padding: 3.5vw 2.5vw;
+      flex-direction:column;
+      align-items:center;
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
+  }
+
+  @media(min-width: 768px)
+  {
+    width:100%;
+    margin: 0 0 7vw;
+
+    a{
+      border-radius: 20px;
+      padding: 1.75vw;
+      flex-direction:row;
+      align-items:unset;
     }
 
     a::before

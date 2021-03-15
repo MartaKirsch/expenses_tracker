@@ -34,6 +34,21 @@ const AddExpenseButton = styled.div`
     transform:translateX(100%);
   }
 
+  @media(min-width: 200px)
+  {
+    width:60vw;
+    height:12vw;
+    margin: 0 0 8vw;
+    font-size:5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:52vw;
+    height:10vw;
+    margin: 0 0 7vw;
+    font-size:4vw;
+  }
 
   @media(min-width: 768px)
   {

@@ -6,6 +6,16 @@ const Header = styled.h1`
   font-weight:normal;
   margin:0;
 
+  @media(min-width: 200px)
+  {
+    font-size:5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:4vw;
+  }
+
   @media(min-width: 768px)
   {
     font-size:3.5vw;

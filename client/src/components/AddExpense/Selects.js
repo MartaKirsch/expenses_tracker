@@ -15,6 +15,28 @@ const Selects = styled.div`
     outline: none;
   }
 
+  @media(min-width: 200px)
+  {
+    width:90%;
+    margin:0 0 12vw;
+    select,input{
+      font-size:4vw;
+      padding:2vw;
+      border-radius:15px;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    width:90%;
+    margin:0 0 12vw;
+    select,input{
+      font-size:3.6vw;
+      padding:1.5vw;
+      border-radius:15px;
+    }
+  }
+
   @media(min-width: 768px)
   {
     width:80%;

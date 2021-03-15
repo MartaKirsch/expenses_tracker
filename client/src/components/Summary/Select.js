@@ -5,6 +5,22 @@ const Select = styled.select`
   background-color:var(--blue);
   border-bottom:1px var(--orange) solid;
 
+  @media(min-width: 200px)
+  {
+    padding:3vw;
+    border-radius:20px;
+    font-size:4.2vw;
+    width:90%;
+  }
+
+  @media(min-width: 576px)
+  {
+    padding:2.75vw;
+    border-radius:20px;
+    font-size:3.8vw;
+    width:80%;
+  }
+
   @media(min-width: 768px)
   {
     padding:1.75vw;

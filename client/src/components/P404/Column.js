@@ -6,6 +6,16 @@ const Column = styled.div`
   align-items:center;
   justify-content:center;
 
+  @media(min-width: 200px)
+  {
+    width:60%;
+  }
+
+  @media(min-width: 576px)
+  {
+    width:50%;
+  }
+
   @media(min-width: 768px)
   {
     width:50%;

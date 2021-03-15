@@ -14,7 +14,7 @@ const LogOutButton = styled.button`
 
   @media(min-width: 200px)
   {
-    font-size:2.5vw;
+    font-size:2.8vw;
   }
 
   @media(min-width: 576px)

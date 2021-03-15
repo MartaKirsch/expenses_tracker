@@ -41,14 +41,14 @@ const Button = styled.div`
 
   @media(min-width: 200px)
   {
-    height:7vw;
+    height:9.3vw;
     width:80%;
-    font-size:3.2vw;
+    font-size:3.5vw;
   }
 
   @media(min-width: 576px)
   {
-    height:7vw;
+    height:9vw;
     width:80%;
     font-size:3.2vw;
   }

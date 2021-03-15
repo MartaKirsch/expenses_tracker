@@ -16,6 +16,23 @@ const Password = styled.input.attrs({
     color: #C4C4C4;
   }
 
+  @media(min-width: 200px)
+  {
+    height:12vw;
+    padding:2.5vw;
+    font-size:3.8vw;
+    width:100%;
+    border-radius:20px;
+  }
+
+  @media(min-width: 576px)
+  {
+    height:11vw;
+    padding:2.5vw;
+    font-size:3.5vw;
+    width:100%;
+    border-radius:20px;
+  }
 
   @media(min-width: 768px)
   {

@@ -3,6 +3,18 @@ import styled from 'styled-components';
 const Date = styled.div`
   text-transform:uppercase;
 
+  @media(min-width: 200px)
+  {
+    margin:2vw 0 7vw;
+    font-size:4.25vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    margin:1vw 0 6vw;
+    font-size:3.5vw;
+  }
+
   @media(min-width: 768px)
   {
     margin:1vw 0 5vw;

@@ -9,7 +9,7 @@ const Title = styled.h1`
     width:75%;
     margin:9vw 0 4vw;
     padding: 0 0 .5vw;
-    font-size: 4.5vw;
+    font-size: 4.9vw;
   }
 
   @media(min-width: 576px)

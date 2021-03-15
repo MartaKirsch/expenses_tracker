@@ -13,6 +13,21 @@ const SearchInput = styled.input`
     color: white;
   }
 
+  @media(min-width: 200px)
+  {
+    height:10vw;
+    font-size:4vw;
+    padding: 0 3.25vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    height:8vw;
+    font-size:3.8vw;
+    padding: 0 3.25vw;
+  }
+
+
   @media(min-width: 768px)
   {
     height:7vw;

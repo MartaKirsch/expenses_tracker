@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   flex-direction:column;
   align-items:center;
 
-  @media(min-width: 768px)
+  @media(min-width: 200px)
   {
     width:100%;
   }

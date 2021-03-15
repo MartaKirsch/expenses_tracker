@@ -15,10 +15,24 @@ const Textarea = styled.textarea`
     color:var(--lightGrey);
   }
 
+  @media(min-width: 200px)
+  {
+    margin: 3vw 0 0;
+    padding:3.5vw;
+    min-height:38vw;
+    max-height:58vw;
+    font-size:3.5vw;
+  }
+
+  @media(min-width: 576px)
+  {
+    min-height:35vw;
+    max-height:55vw;
+    font-size:2.8vw;
+  }
 
   @media(min-width: 768px)
   {
-    margin: 3vw 0 0;
     padding:3vw;
     min-height:30vw;
     max-height:50vw;
@@ -28,7 +42,6 @@ const Textarea = styled.textarea`
   @media(min-width: 992px)
   {
     margin: 2vw 0 0;
-    padding:3vw;
     min-height:25vw;
     max-height:45vw;
     font-size:2vw;
@@ -36,7 +49,6 @@ const Textarea = styled.textarea`
 
   @media(min-width: 1200px)
   {
-    margin: 2vw 0 0;
     padding:2vw;
     min-height:20vw;
     max-height:40vw;

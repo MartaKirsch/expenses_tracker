@@ -30,6 +30,25 @@ const Button = styled.button`
       }
     `)}
 
+
+    @media(min-width: 200px)
+    {
+      padding: 2.75vw 3.25vw;
+      font-size:4.5vw;
+      ${props => props.delete ? (css`
+          margin-bottom:10vw;
+        `) : (``)}
+    }
+
+    @media(min-width: 576px)
+    {
+      padding: 2.5vw 3vw;
+      font-size:4vw;
+      ${props => props.delete ? (css`
+          margin-bottom:10vw;
+        `) : (``)}
+    }
+
     @media(min-width: 768px)
     {
       padding: 2vw 2.5vw;

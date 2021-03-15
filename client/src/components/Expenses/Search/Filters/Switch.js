@@ -29,6 +29,37 @@ const Switch = styled.div`
     transform:scale(1);
   }
 
+  @media(min-width: 200px)
+  {
+    font-size:4.3vw;
+    button{
+      font-size:6.5vw;
+      border-radius:20px;
+      margin: 0 3vw 0 0;
+      height:11vw;
+      width:11vw;
+    }
+    button::after
+    {
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    font-size:3.5vw;
+    button{
+      font-size:6vw;
+      border-radius:20px;
+      margin: 0 3vw 0 0;
+      height:9vw;
+      width:9vw;
+    }
+    button::after
+    {
+      border-radius:20px;
+    }
+  }
 
   @media(min-width: 768px)
   {

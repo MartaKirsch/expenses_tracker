@@ -42,15 +42,34 @@ const DeleteOpts = styled.div`
     display:flex;
   }
 
+  @media(min-width: 200px)
+  {
+    margin: 0 0 10vw;
+    width:50%;
+    button
+    {
+      font-size:4.2vw;
+      padding:2.5vw;
+      border-radius:25px;
+    }
+  }
+
+  @media(min-width: 576px)
+  {
+    button
+    {
+      font-size:4vw;
+      padding:2.25vw;
+    }
+  }
+
   @media(min-width: 768px)
   {
     margin: 0 0 6vw;
-    width:50%;
     button
     {
       font-size:3vw;
       padding:2vw;
-      border-radius:25px;
     }
   }
 
@@ -62,14 +81,11 @@ const DeleteOpts = styled.div`
     {
       font-size:2.5vw;
       padding:1.5vw;
-      border-radius:25px;
     }
   }
 
   @media(min-width: 1200px)
   {
-    margin: 0 0 4vw;
-    width:40%;
     button
     {
       font-size:1.7vw;

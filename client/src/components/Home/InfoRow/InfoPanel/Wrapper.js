@@ -32,9 +32,9 @@ const Wrapper = styled.div`
 
   @media(min-width: 200px)
   {
-    width:80%;
-    padding:4vw;
-    margin: 0 0 10vw;
+    width:90%;
+    padding:4.25vw;
+    margin: 0 0 12vw;
   }
 
   @media(min-width: 576px)
