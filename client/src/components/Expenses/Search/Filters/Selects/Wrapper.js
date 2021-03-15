@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display:flex;
-  margin: 0 0 1.5vw;
-  font-size:1.3vw;
-  width:15vw;
   justify-content:space-between;
   align-items:center;
 
@@ -15,10 +12,62 @@ const Wrapper = styled.div`
   select{
     background-color:var(--blue);
     border-bottom: 2px solid var(--orange);
-    width:10vw;
-    font-size:1vw;
-    padding:.5vw;
-    border-radius:15px;
+  }
+
+  @media(min-width: 768px)
+  {
+    margin: 0 0 5vw;
+    font-size:2.9vw;
+    width:40vw;
+
+    select{
+      width:25vw;
+      font-size:2.6vw;
+      padding:1.25vw;
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    margin: 0 0 1.5vw;
+    font-size:2vw;
+    width:26vw;
+
+    select{
+      width:18vw;
+      font-size:1.8vw;
+      padding:1vw;
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    margin: 0 0 1.5vw;
+    font-size:1.8vw;
+    width:22vw;
+
+    select{
+      width:15vw;
+      font-size:1.5vw;
+      padding:1vw;
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    margin: 0 0 1.5vw;
+    font-size:1.3vw;
+    width:15vw;
+
+    select{
+      width:10vw;
+      font-size:1vw;
+      padding:.5vw;
+      border-radius:15px;
+    }
   }
 `;
 

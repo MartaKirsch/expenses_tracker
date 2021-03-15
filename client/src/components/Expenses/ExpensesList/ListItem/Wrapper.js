@@ -2,23 +2,18 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width:100%;
-  margin: 0 0 3vw;
 
   a{
     display:flex;
     background-color:var(--blue);
     height:100%;
     width:100%;
-    border-radius: 20px;
-    padding: 1vw;
-
     position:relative;
     z-index:1;
   }
 
   a::before{
     content:'';
-    border-radius:15px;
     top:0;
     left:0;
     position:absolute;
@@ -35,6 +30,67 @@ const Wrapper = styled.div`
 
   a:hover::before,a:focus::before{
     opacity:1;
+  }
+
+
+  @media(min-width: 768px)
+  {
+    margin: 0 0 7vw;
+
+    a{
+      border-radius: 20px;
+      padding: 1.75vw
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    margin: 0 0 6vw;
+
+    a{
+      border-radius: 20px;
+      padding: 1.75vw
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    margin: 0 0 4vw;
+
+    a{
+      border-radius: 20px;
+      padding: 1.25vw
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    margin: 0 0 3vw;
+
+    a{
+      border-radius: 20px;
+      padding: 1vw
+    }
+
+    a::before
+    {
+      border-radius: 20px;
+    }
   }
 `;
 

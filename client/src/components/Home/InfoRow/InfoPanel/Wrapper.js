@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
-const InfoBox = styled.div`
-  background-color:var(--blue);
+const Wrapper = styled.div`
+  background-color:#4F5D75;
   display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:20px;
+  flex-direction:column;
+  border-radius:15px;
   position:relative;
   z-index:1;
   cursor:default;
 
   &::before{
     content:'';
-    border-radius:20px;
+    border-radius:15px;
     top:0;
     left:0;
     position:absolute;
@@ -33,31 +32,30 @@ const InfoBox = styled.div`
 
   @media(min-width: 768px)
   {
+    width:60%;
     padding:2.5vw;
-    font-size:2.5vw;
-    width:80%;
+    margin: 0 0 7vw;
   }
 
   @media(min-width: 992px)
   {
-    padding:2.5vw;
-    font-size:1.8vw;
-    width:80%;
+    width:45%;
+    padding:2vw;
+    margin: 0 0 4vw;
   }
 
   @media(min-width: 1200px)
   {
-    padding:2.5vw;
-    font-size:1.8vw;
-    width:80%;
+    margin:0;
+    width:45%;
+    padding:1.5vw;
   }
 
   @media(min-width: 1600px)
   {
-    padding:2vw;
-    font-size:1.3vw;
-    width:80%;
+    width:45%;
+    padding:1.25vw;
   }
 `;
 
-export default InfoBox;
+export default Wrapper;

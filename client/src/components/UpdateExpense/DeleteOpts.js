@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 const DeleteOpts = styled.div`
   display:none;
-  width:30%;
   justify-content:space-between;
-  margin: 0 0 3vw;
 
   button:first-child{
     background-color:var(--orange);
@@ -31,9 +29,6 @@ const DeleteOpts = styled.div`
   button{
     background-color:white;
     color:var(--orange);
-    font-size:1.2vw;
-    padding:1vw;
-    border-radius:20px;
     overflow:hidden;
     position:relative;
     z-index:1;
@@ -45,6 +40,53 @@ const DeleteOpts = styled.div`
 
   &.visible{
     display:flex;
+  }
+
+  @media(min-width: 768px)
+  {
+    margin: 0 0 6vw;
+    width:50%;
+    button
+    {
+      font-size:3vw;
+      padding:2vw;
+      border-radius:25px;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    margin: 0 0 4vw;
+    width:40%;
+    button
+    {
+      font-size:2.5vw;
+      padding:1.5vw;
+      border-radius:25px;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    margin: 0 0 4vw;
+    width:40%;
+    button
+    {
+      font-size:1.7vw;
+      padding:1vw;
+      border-radius:20px;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    margin: 0 0 3vw;
+    width:30%;
+
+    button
+    {
+      font-size:1.2vw;
+    }
   }
 
 `;

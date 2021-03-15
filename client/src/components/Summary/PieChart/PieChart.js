@@ -10,7 +10,7 @@ const PieChart = ({ isLogged }) => {
 
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
-  const [types, setTypes] = useState([1,1,1,1,1,1]);
+  const [types, setTypes] = useState([1,1,1,1,1,1,1]);
 
   const [data, setData] = useState(null);
   const [err, setErr] = useState(null);

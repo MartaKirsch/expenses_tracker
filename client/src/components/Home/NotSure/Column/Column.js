@@ -1,12 +1,6 @@
-import styled from 'styled-components';
 import Title from 'components/Home/NotSure/Column/Title';
 import TextWrapper from 'components/Home/NotSure/Column/TextWrapper';
-
-const Wrapper = styled.div`
-  display:flex;
-  flex-direction:column;
-  width:40%;
-`;
+import Wrapper from 'components/Home/NotSure/Column/Wrapper';
 
 const Column = () => {
   return(

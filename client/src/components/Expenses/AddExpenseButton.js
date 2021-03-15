@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 const AddExpenseButton = styled.div`
-  width:20vw;
-  height:3.5vw;
   border-radius:20px;
   overflow:hidden;
-  margin: 0 0 2vw;
 
   a{
     height:100%;
@@ -15,7 +12,6 @@ const AddExpenseButton = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:1.5vw;
     font-weight:normal;
     border-radius:20px;
     position:relative;
@@ -36,6 +32,39 @@ const AddExpenseButton = styled.div`
 
   a:hover::before,a:focus::before{
     transform:translateX(100%);
+  }
+
+
+  @media(min-width: 768px)
+  {
+    width:48vw;
+    height:8vw;
+    margin: 0 0 6vw;
+    font-size:3.8vw;
+  }
+
+  @media(min-width: 992px)
+  {
+    width:40vw;
+    height:6vw;
+    margin: 0 0 4vw;
+    font-size:3vw;
+  }
+
+  @media(min-width: 1200px)
+  {
+    width:25vw;
+    height:4.5vw;
+    margin: 0 0 3vw;
+    font-size:2vw;
+  }
+
+  @media(min-width: 1600px)
+  {
+    width:20vw;
+    height:3.5vw;
+    margin: 0 0 2vw;
+    font-size:1.5vw;
   }
 
 `;

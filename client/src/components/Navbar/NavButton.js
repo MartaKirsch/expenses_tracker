@@ -5,12 +5,10 @@ const NavButton = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:0 2vw;
-  font-size:1.5vw;
   position:relative;
 
   a{
-   position:relative;
+    position:relative;
   }
 
   a::before{
@@ -23,7 +21,6 @@ const NavButton = styled.div`
     background-color: #EF8354;
     opacity:0;
     transform: scaleX(0);
-    /* transition: transform .3s ease-in-out,opacity .3s ease-in-out; */
     transition: transform .3s ease-in-out;
   }
 
@@ -32,6 +29,30 @@ const NavButton = styled.div`
     transform:scaleX(1);
   }
 
+
+  @media(min-width: 768px)
+  {
+    padding:0 3.25vw;
+    font-size:3.2vw;
+  }
+
+  @media(min-width: 992px)
+  {
+    padding:0 3vw;
+    font-size:2.8vw;
+  }
+
+  @media(min-width: 1200px)
+  {
+    padding:0 2vw;
+    font-size:2vw;
+  }
+
+  @media(min-width: 1600px)
+  {
+    padding:0 2vw;
+    font-size:1.5vw;
+  }
 `;
 
 export default NavButton;

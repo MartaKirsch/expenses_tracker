@@ -2,12 +2,40 @@ import styled from 'styled-components';
 
 const Select = styled.select`
   text-transform:uppercase;
-  font-size:1.2vw;
-  width:70%;
   background-color:var(--blue);
-  padding:.5vw;
-  border-radius:15px;
   border-bottom:1px var(--orange) solid;
+
+  @media(min-width: 768px)
+  {
+    padding:1.75vw;
+    border-radius:20px;
+    font-size:2.8vw;
+    width:70%;
+  }
+
+  @media(min-width: 992px)
+  {
+    padding:1.5vw;
+    border-radius:20px;
+    font-size:2.2vw;
+    width:60%;
+  }
+
+  @media(min-width: 1200px)
+  {
+    padding:1vw;
+    border-radius:20px;
+    font-size:1.7vw;
+    width:80%;
+  }
+
+  @media(min-width: 1600px)
+  {
+    padding:.5vw;
+    border-radius:15px;
+    font-size:1.2vw;
+    width:70%;
+  }
 `;
 
 export default Select;

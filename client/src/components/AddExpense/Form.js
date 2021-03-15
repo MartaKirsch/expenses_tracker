@@ -61,7 +61,7 @@ const Form = ({redirect}) => {
   };
 
   const handleBlur = (ref,errSetter,isPrice=false) => {
-    const reg=/\w{1,40}/;
+    const reg=/^.{1,40}$/;
 
     if(!reg.test(ref.current.value))
     {
@@ -110,6 +110,7 @@ const Form = ({redirect}) => {
       name="title"
       value={title}
       ref={titleRef}
+      widthS={0.6}
       onChange={e=>setTitle(e.target.value)}
       onBlur={e=>handleBlur(titleRef,setTitleErr)}
       onFocus={e=>handleFocus(setTitleErr)}
@@ -122,6 +123,7 @@ const Form = ({redirect}) => {
       name="shop"
       value={shop}
       ref={shopRef}
+      widthS={0.6}
       onChange={e=>setShop(e.target.value)}
       onBlur={e=>handleBlur(shopRef,setShopErr)}
       onFocus={e=>handleFocus(setShopErr)}
@@ -134,6 +136,7 @@ const Form = ({redirect}) => {
       name="price"
       value={price}
       ref={priceRef}
+      widthS={0.6}
       onChange={e=>setPrice(e.target.value)}
       onBlur={e=>handleBlur(priceRef,setPriceErr,true)}
       onFocus={e=>handleFocus(setPriceErr)}

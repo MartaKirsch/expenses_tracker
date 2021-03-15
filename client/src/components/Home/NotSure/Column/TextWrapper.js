@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 const TextWrapper = styled.div`
   background-color: #4F5D75;
-  padding:1vw;
-  font-size:1vw;
   text-align:justify;
   border-radius:20px;
   position:relative;
@@ -30,6 +28,31 @@ const TextWrapper = styled.div`
   &:hover::before{
     opacity:1;
   }
+
+  @media(min-width: 768px)
+  {
+    padding:2.25vw;
+    font-size:2.3vw;
+  }
+
+  @media(min-width: 992px)
+  {
+    padding:1.9vw;
+    font-size:1.8vw;
+  }
+
+  @media(min-width: 1200px)
+  {
+    padding:1.4vw;
+    font-size:1.5vw;
+  }
+
+  @media(min-width: 1600px)
+  {
+    padding:1vw;
+    font-size:1vw;
+  }
+
 `;
 
 export default TextWrapper;

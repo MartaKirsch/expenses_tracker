@@ -5,8 +5,6 @@ const UserIcon = styled.div`
   justify-content:center;
   align-items:center;
   background-color:var(--blue);
-  width:40%;
-  padding:1vw;
   border-radius:20px;
   position:relative;
   z-index:1;
@@ -34,8 +32,48 @@ const UserIcon = styled.div`
   }
 
   img {
-    width:8vw;
     height:auto;
+  }
+
+
+  @media(min-width: 768px)
+  {
+    width:60%;
+    padding:4vw;
+
+    img {
+      width:17vw;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    width:50%;
+    padding:4vw;
+
+    img {
+      width:14vw;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    width:50%;
+    padding:2vw;
+
+    img {
+      width:10vw;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    width:40%;
+    padding:1vw;
+
+    img {
+      width:8vw;
+    }
   }
 `;
 

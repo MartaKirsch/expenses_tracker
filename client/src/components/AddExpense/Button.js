@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components';
 
 const Button = styled.button`
-  font-size:1.5vw;
   text-transform:uppercase;
   background-color: ${props => props.delete ? ('var(--red)') : ('var(--orange)')};
-  padding: 0.8vw 1.5vw;
   border-radius:20px;
   z-index:1;
   position:relative;
@@ -32,11 +30,41 @@ const Button = styled.button`
       }
     `)}
 
-  ${props => props.delete ? (css`
-      margin-bottom:2vw;
-    `) : (``)}
+    @media(min-width: 768px)
+    {
+      padding: 2vw 2.5vw;
+      font-size:3vw;
+      ${props => props.delete ? (css`
+          margin-bottom:6vw;
+        `) : (``)}
+    }
 
+    @media(min-width: 992px)
+    {
+      padding: 1.5vw 2vw;
+      font-size:2.2vw;
+      ${props => props.delete ? (css`
+          margin-bottom:4vw;
+        `) : (``)}
+    }
 
+    @media(min-width: 1200px)
+    {
+      padding: 1vw 1.8vw;
+      font-size:1.7vw;
+      ${props => props.delete ? (css`
+          margin-bottom:4vw;
+        `) : (``)}
+    }
+
+    @media(min-width: 1600px)
+    {
+      padding: 0.8vw 1.5vw;
+      font-size:1.5vw;
+      ${props => props.delete ? (css`
+          margin-bottom:2vw;
+        `) : (``)}
+    }
 `;
 
 export default Button;

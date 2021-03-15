@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  width:90%;
   display:flex;
   justify-content:space-around;
   align-items:flex-end;
@@ -11,17 +10,67 @@ const Wrapper = styled.div`
   &::before{
     content:'';
     height:1px;
-    width:110%;
     position:absolute;
     top:0;
-    left:-5%;
     background-color: #4F5D75;
   }
 
   svg{
-    width:20%;
     height:auto;
     overflow:visible;
+  }
+
+
+  @media(min-width: 768px)
+  {
+    width:80%;
+
+    &::before
+    {
+      left:5%;
+      width:90%;
+    }
+
+    svg{
+      width:25%;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    width:80%;
+
+    &::before
+    {
+      left:5%;
+      width:90%;
+    }
+
+    svg{
+      width:22%;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    width:90%;
+
+    &::before
+    {
+      left:-5%;
+      width:110%;
+    }
+
+    svg{
+      width:27%;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    svg{
+      width:20%;
+    }
   }
 `;
 

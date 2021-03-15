@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
 const Options = styled.div`
-  width:130% !important;
   position:absolute;
   display: ${({visible})=>visible ? ('flex') : ('none')};
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  top:3vw;
   background-color:var(--blue);
-  border-radius:15px;
 
   label{
     width:100%;
@@ -18,14 +15,9 @@ const Options = styled.div`
     justify-content:space-between;
     align-items:center;
     position:relative;
-    font-size:1vw;
-    padding:.5vw;
   }
 
   input{
-    width:1.5vw;
-    height:1.5vw;
-    margin:0;
     position:relative;
     z-index:2;
     opacity:0.01;
@@ -39,14 +31,9 @@ const Options = styled.div`
     content:"✓";
   }
 
-
   span{
-    width:1.5vw;
-    height:1.5vw;
-    border-radius:5px;
     background-color:var(--lightGrey);
     position:absolute;
-    right:.5vw;
   }
 
   span::after{
@@ -57,6 +44,106 @@ const Options = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+  }
+
+  @media(min-width: 768px)
+  {
+    width:150% !important;
+    top:8vw;
+    border-radius:20px;
+
+    label{
+      font-size:2.5vw;
+      padding:2vw;
+    }
+
+    input{
+      width:4.5vw;
+      height:4.5vw;
+      margin:0;
+    }
+
+    span{
+      width:4.5vw;
+      height:4.5vw;
+      border-radius:10px;
+      right:2vw;
+    }
+  }
+
+  @media(min-width: 992px)
+  {
+    width:150% !important;
+    top:7vw;
+    border-radius:20px;
+
+    label{
+      font-size:2vw;
+      padding:1.5vw;
+    }
+
+    input{
+      width:4vw;
+      height:4vw;
+      margin:0;
+    }
+
+    span{
+      width:4vw;
+      height:4vw;
+      border-radius:10px;
+      right:1.5vw;
+    }
+  }
+
+  @media(min-width: 1200px)
+  {
+    width:150% !important;
+    top:5vw;
+    border-radius:15px;
+
+    label{
+      font-size:1.3vw;
+      padding:1.2vw;
+    }
+
+    input{
+      width:3vw;
+      height:3vw;
+      margin:0;
+    }
+
+    span{
+      width:2.5vw;
+      height:2.5vw;
+      border-radius:10px;
+      right:1.2vw;
+    }
+  }
+
+  @media(min-width: 1600px)
+  {
+    width:130% !important;
+    top:3vw;
+    border-radius:15px;
+
+    label{
+      font-size:1vw;
+      padding:.5vw;
+    }
+
+    input{
+      width:1.5vw;
+      height:1.5vw;
+      margin:0;
+    }
+
+    span{
+      width:1.5vw;
+      height:1.5vw;
+      border-radius:5px;
+      right:.5vw;
+    }
   }
 
 `;

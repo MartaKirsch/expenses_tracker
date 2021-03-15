@@ -5,11 +5,8 @@ const Button = styled.div`
   background-color:#E26630;
   border-radius:20px;
   overflow:hidden;
-  height:3vw;
-  width:80%;
 
   a{
-    font-size:1.25vw;
     border-radius:20px;
     display:flex;
     justify-content:center;
@@ -41,6 +38,34 @@ const Button = styled.div`
     transform:translateX(100%);
   }
 
+
+  @media(min-width: 768px)
+  {
+    height:6vw;
+    width:80%;
+    font-size:2.5vw;
+  }
+
+  @media(min-width: 992px)
+  {
+    height:5vw;
+    width:80%;
+    font-size:2vw;
+  }
+
+  @media(min-width: 1200px)
+  {
+    height:4vw;
+    width:80%;
+    font-size:1.5vw;
+  }
+
+  @media(min-width: 1600px)
+  {
+    height:3vw;
+    width:80%;
+    font-size:1.25vw;
+  }
 `;
 
 export default Button;

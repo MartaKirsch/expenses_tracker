@@ -67,9 +67,7 @@ const BarChart = ({ isLogged }) => {
         else {
           values=values.slice(first_month).concat(values.slice(0,last_month+1));
         }
-
-        console.log(values);
-
+        
         setIsPending(false);
         setErr(null);
         setData(values);

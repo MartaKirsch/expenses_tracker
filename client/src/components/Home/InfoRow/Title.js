@@ -5,9 +5,31 @@ const Title = styled.h1`
   font-weight:300;
   margin:0;
   padding:0;
-  font-size:1.7vw;
   border-bottom: 3px solid #EF8354;
-  padding: 0 0 .7vw 0;
+
+  @media(min-width: 768px)
+  {
+    font-size:3.7vw;
+    padding: 0 0 2vw 0;
+  }
+
+  @media(min-width: 992px)
+  {
+    font-size:2.7vw;
+    padding: 0 0 1.5vw 0;
+  }
+
+  @media(min-width: 1200px)
+  {
+    font-size:2.1vw;
+    padding: 0 0 1vw 0;
+  }
+
+  @media(min-width: 1600px)
+  {
+    font-size:1.7vw;
+    padding: 0 0 .7vw 0;
+  }
 `;
 
 export default Title;
