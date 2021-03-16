@@ -7,7 +7,9 @@ const Main = ({loggedIn}) => {
   const [expenses, setExpenses] = useState(null);
   const [err, setErr] = useState(null);
   const [isPending, setIsPending] = useState(true);
-  const values = {loggedIn,expenses, setExpenses, err, setErr, isPending, setIsPending};
+  const [howManyExpenses, setHowManyExpenses] = useState(true);
+  const [isUpdate, setIsUpdate] = useState(false);
+  const values = {loggedIn,expenses, setExpenses, err, setErr, isPending, setIsPending,howManyExpenses, setHowManyExpenses,isUpdate, setIsUpdate};
 
   return(
     <Context.Provider value={values}>

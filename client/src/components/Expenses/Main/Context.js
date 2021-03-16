@@ -6,7 +6,11 @@ const Context = React.createContext({
   expenses:null,
   setIsPending: ()=>{},
   setErr: ()=>{},
-  setExpenses: ()=>{}
+  setExpenses: ()=>{},
+  howManyExpenses:null,
+  setHowManyExpenses:()=>{},
+  isUpdate:null,
+  setIsUpdate:()=>{}
 });
 
 export default Context;

@@ -87,6 +87,7 @@ const Wrapper = styled.div`
 
   @media(min-width: 992px)
   {
+    width:100%;
     margin: 0 0 6vw;
 
     a{
@@ -103,6 +104,7 @@ const Wrapper = styled.div`
   @media(min-width: 1200px)
   {
     margin: 0 0 4vw;
+    width:100%;
 
     a{
       border-radius: 20px;
@@ -118,6 +120,7 @@ const Wrapper = styled.div`
   @media(min-width: 1600px)
   {
     margin: 0 0 3vw;
+    width:100%;
 
     a{
       border-radius: 20px;

@@ -8,24 +8,47 @@ import axios from 'axios';
 
 const Search = () => {
 
-  const {setIsPending,setErr,setExpenses,loggedIn} = useContext(Context);
+  const {setIsPending,setErr,setExpenses,loggedIn,howManyExpenses,expenses,isUpdate, setIsUpdate} = useContext(Context);
 
   const formRef = useRef(null);
 
   useEffect(()=>{
     let source = axios.CancelToken.source();
-
     if(loggedIn)
     {
-      axios.post('/expenses/load', {cancelToken: source.token})
+      let data = {};
+      if(isUpdate)
+      {
+        const date = formRef.current.querySelector('select[name="date"]').value;
+        const type = formRef.current.querySelector('select[name="type"]').value;
+        const phrase = formRef.current.querySelector('input[type="search"]').value;
+        
+        data = {
+          date: date==="newest" ? (-1) : (1),
+          type: type==="all" ? ("") : (type),
+          phrase:phrase==="" ? ("") : (phrase)
+        };
+
+        setIsUpdate(false);
+      }
+
+      axios.post('/expenses/load', {...data,howMany:howManyExpenses,cancelToken: source.token})
       .then(res=>{
         if(res.statusText!=="OK")
         {
           throw Error('Could not fetch data');
         }
-        setIsPending(false);
-        setErr(null);
-        setExpenses(res.data);
+        if(expenses && expenses.length)
+        {
+          let arr = [...expenses,...res.data];
+          setExpenses(arr);
+        }
+        else
+        {
+          setExpenses(res.data);
+        }
+          setIsPending(false);
+          setErr(null);
       }).catch(err=>{
         if (!axios.isCancel(err))
         {
@@ -38,7 +61,7 @@ const Search = () => {
     return () => {
       source.cancel("Cancelling in cleanup");
     }
-  },[loggedIn]);
+  },[loggedIn,howManyExpenses]);
 
   const fetchData = () => {
     const date = formRef.current.querySelector('select[name="date"]').value;
@@ -48,7 +71,8 @@ const Search = () => {
     const data = {
       date: date==="newest" ? (-1) : (1),
       type: type==="all" ? ("") : (type),
-      phrase:phrase==="" ? ("") : (phrase)
+      phrase:phrase==="" ? ("") : (phrase),
+      howMany:0
     };
 
     axios.post('/expenses/load', data)
@@ -57,9 +81,9 @@ const Search = () => {
       {
         throw Error('Could not fetch data');
       }
-      setIsPending(false);
-      setErr(null);
-      setExpenses(res.data);
+        setExpenses(res.data);
+        setIsPending(false);
+        setErr(null);
     }).catch(err=>{
       setErr(err.message);
       setIsPending(false);
