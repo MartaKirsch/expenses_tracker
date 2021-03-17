@@ -44,7 +44,7 @@ const Button = styled.button`
 
   @media(min-width: 1600px)
   {
-    font-size:1.6vw;
+    font-size:1.2vw;
     padding:.5vw;
   }
 `;

@@ -50,7 +50,6 @@ const Panel = ({ isVisible })=>{
   return(
     <Wrapper isVisible={isVisible}>
       <Button><Link to="/account">Your Account</Link></Button>
-      <Button><Link to="/summary">Summary</Link></Button>
       {isLoggedIn && <LogOutButton onClick={handleLogOut}>Log out</LogOutButton>}
       {!isLoggedIn && <LogOutButton
         onClick={e=>history.push('/log-in')}>

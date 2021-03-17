@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   @media(min-width: 200px)
   {
     right:5vw;
-    height:39vw;
+    height:32vw;
     padding:2.25vw 0;
     width:38vw;
   }
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   @media(min-width: 576px)
   {
     right:5vw;
-    height:35vw;
+    height:28vw;
     padding:2vw 0;
     width:34vw;
   }
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   @media(min-width: 768px)
   {
     right:5vw;
-    height:29vw;
+    height:22vw;
     padding:2vw 0;
     width:28vw;
   }
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
   @media(min-width: 992px)
   {
     right:4vw;
-    height:24vw;
+    height:16vw;
     padding:1vw 0;
     width:25vw;
   }
@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   @media(min-width: 1200px)
   {
     right:3vw;
-    height:17vw;
+    height:11vw;
     padding:.5vw 0;
     width:18vw;
   }
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
   @media(min-width: 1600px)
   {
     right:2vw;
-    height:12vw;
+    height:9vw;
     padding:.5vw 0;
     width:13vw;
   }

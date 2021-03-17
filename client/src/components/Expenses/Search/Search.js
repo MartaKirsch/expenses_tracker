@@ -22,7 +22,7 @@ const Search = () => {
         const date = formRef.current.querySelector('select[name="date"]').value;
         const type = formRef.current.querySelector('select[name="type"]').value;
         const phrase = formRef.current.querySelector('input[type="search"]').value;
-        
+
         data = {
           date: date==="newest" ? (-1) : (1),
           type: type==="all" ? ("") : (type),
@@ -32,6 +32,7 @@ const Search = () => {
         setIsUpdate(false);
       }
 
+      console.log(howManyExpenses);
       axios.post('/expenses/load', {...data,howMany:howManyExpenses,cancelToken: source.token})
       .then(res=>{
         if(res.statusText!=="OK")

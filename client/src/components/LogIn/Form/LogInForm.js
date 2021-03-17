@@ -6,7 +6,7 @@ import Password from 'components/LogIn/Form/Password';
 import Submit from 'components/LogIn/Form/Submit';
 import ErrorMssg from 'components/LogIn/Form/ErrorMssg';
 
-const LogInForm = ({redirect}) => {
+const LogInForm = ({redirect,redirectWithUrl}) => {
 
   //input values
   const [username, setUsername] = useState("");
@@ -48,7 +48,14 @@ const LogInForm = ({redirect}) => {
       }
       if(mssg==="ok")
       {
-        redirect();
+        console.log(sessionStorage.getItem('redirect'));
+        if(sessionStorage.getItem('redirect'))
+        {
+          redirectWithUrl();
+        }
+        else {
+          redirect();
+        }
       }
       else if(mssg==="username")
       {

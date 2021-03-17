@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const InterestedButton = () => {
   return(
     <Wrapper>
-      <Link to='/log-in'>Interested? Let's get started</Link>
+      <Link to='/expenses'>Interested? Let's get started</Link>
     </Wrapper>
   )
 };

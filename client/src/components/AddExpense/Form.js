@@ -13,7 +13,7 @@ const Form = ({redirect}) => {
   //input values
   const [title,setTitle] = useState("");
   const [shop,setShop] = useState("");
-  const [date,setDate] = useState("");
+  const [date,setDate] = useState(getTodaysDate());
   const [price,setPrice] = useState("");
   const [type,setType] = useState("none");
 
