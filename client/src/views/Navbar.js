@@ -38,6 +38,12 @@ const Navbar = () =>{
         </Link>
       </NavButton>
 
+      <NavButton>
+        <Link to='/summary'>
+          Summary
+        </Link>
+      </NavButton>
+
       <NavButton ref={panelRef} isVisible={isVisible}>
         <Img url={"../imgs/circle.png"} onClick={()=>setIsVisible(!isVisible)}></Img>
         <Panel isVisible={isVisible}/>

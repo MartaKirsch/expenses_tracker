@@ -23,6 +23,7 @@ const Expenses = (props) => {
       if(!res.data.isLogged)
       {
         setLoggedIn(false);
+        sessionStorage.setItem('redirect', '/expenses');
         history.push('/log-in');
       }
       setLoggedIn(true);

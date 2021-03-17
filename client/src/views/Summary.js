@@ -25,6 +25,7 @@ const Summary = () => {
       if(!res.data.isLogged)
       {
         setIsLogged(false);
+        sessionStorage.setItem('redirect', '/summary');
         history.push('/log-in');
       }
       setIsLogged(true);

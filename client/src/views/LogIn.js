@@ -31,12 +31,18 @@ const LogIn = (props)=>{
   },[]);
 
   const redirect = () => {
-    props.history.push("/account");
+    props.history.push("/expenses");
+  };
+
+  const redirectWithUrl = () => {
+    const url = sessionStorage.getItem('redirect');
+    sessionStorage.removeItem('redirect');
+    props.history.push(url);
   };
 
   return(
     <Wrapper>
-      {!isRegister && <LogInForm redirect={redirect}/>}
+      {!isRegister && <LogInForm redirect={redirect} redirectWithUrl={redirectWithUrl}/>}
       {isRegister && <RegisterForm redirect={redirect}/>}
       <ChangeForm onClick={()=>setIsRegister(!isRegister)}>{isRegister?(mssg2):(mssg1)}</ChangeForm>
     </Wrapper>
